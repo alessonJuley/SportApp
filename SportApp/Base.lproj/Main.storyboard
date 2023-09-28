@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V6y-Ww-8Uh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Featured Sport-->
+        <scene sceneID="znb-fK-mIn">
+            <objects>
+                <viewController id="lsA-b1-Tgc" customClass="SportViewController" customModule="SportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Eu-ST-Hod" userLabel="Base View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d8U-D7-tJo" userLabel="Sports Stack View">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctb-zN-hM5" userLabel="Sport Name View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ3-zM-N0Z">
+                                                <rect key="frame" x="15" y="15" width="384" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nZ3-zM-N0Z" firstAttribute="leading" secondItem="ctb-zN-hM5" secondAttribute="leading" constant="15" id="EA0-ZO-U0t"/>
+                                            <constraint firstItem="nZ3-zM-N0Z" firstAttribute="top" secondItem="ctb-zN-hM5" secondAttribute="top" constant="15" id="HkM-XK-h5Q"/>
+                                            <constraint firstAttribute="bottom" secondItem="nZ3-zM-N0Z" secondAttribute="bottom" constant="15" id="I3i-vC-PXj"/>
+                                            <constraint firstAttribute="trailing" secondItem="nZ3-zM-N0Z" secondAttribute="trailing" constant="15" id="Rbj-jR-Eik"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-IR-Sf0" userLabel="Sport Details View">
+                                        <rect key="frame" x="0.0" y="77" width="414" height="693"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZQ-LX-APT">
+                                                <rect key="frame" x="10" y="0.0" width="389" height="678"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eZQ-LX-APT" firstAttribute="leading" secondItem="Khh-IR-Sf0" secondAttribute="leading" constant="10" id="Hgl-C2-IcG"/>
+                                            <constraint firstAttribute="trailing" secondItem="eZQ-LX-APT" secondAttribute="trailing" constant="15" id="fCF-wy-yH5"/>
+                                            <constraint firstItem="eZQ-LX-APT" firstAttribute="top" secondItem="Khh-IR-Sf0" secondAttribute="top" id="g6d-hL-JVM"/>
+                                            <constraint firstAttribute="bottom" secondItem="eZQ-LX-APT" secondAttribute="bottom" constant="15" id="ubS-Du-RA3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ctb-zN-hM5" firstAttribute="height" secondItem="d8U-D7-tJo" secondAttribute="height" multiplier="0.1" id="0vx-Jw-Q5y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JmW-YN-J9j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JmW-YN-J9j" firstAttribute="bottom" secondItem="d8U-D7-tJo" secondAttribute="bottom" id="B6e-9K-CGU"/>
+                            <constraint firstItem="d8U-D7-tJo" firstAttribute="leading" secondItem="JmW-YN-J9j" secondAttribute="leading" id="KEK-QI-XAw"/>
+                            <constraint firstItem="JmW-YN-J9j" firstAttribute="trailing" secondItem="d8U-D7-tJo" secondAttribute="trailing" id="LkH-Of-f9w"/>
+                            <constraint firstItem="d8U-D7-tJo" firstAttribute="top" secondItem="JmW-YN-J9j" secondAttribute="top" id="vrM-z7-JZ0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Featured Sport" id="Oks-Rk-gfW">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="KEi-96-tQ5">
+                            <connections>
+                                <action selector="refreshAction:" destination="lsA-b1-Tgc" id="oK2-iW-mEd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sportDetailTextView" destination="eZQ-LX-APT" id="NHY-hy-0uy"/>
+                        <outlet property="sportNameLabel" destination="nZ3-zM-N0Z" id="tIN-4k-M9f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgP-h8-jbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4331.884057971015" y="-5.3571428571428568"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j1a-rk-R0n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V6y-Ww-8Uh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1E5-Ni-plv">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.3803921569" green="0.0039215686269999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lsA-b1-Tgc" kind="relationship" relationship="rootViewController" id="WwI-WF-0ts"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVb-Xa-nCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3421.739130434783" y="-5.3571428571428568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

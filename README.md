@@ -10,7 +10,7 @@ To explore this project, follow these simple steps:
    git clone https://github.com/alessonJuley/SportApp.git
 2. Build and run app using Xcode.
 
-<h1>Screenshot</h1>
+# Screenshot
 <img width="233" src="https://github.com/alessonJuley/SportApp/assets/92022487/25ee7a29-44f7-4005-bc59-5a223534ae8b">
 
 <h1>Developer</h1>
